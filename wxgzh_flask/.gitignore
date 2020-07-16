@@ -1,0 +1,5 @@
+.idea/
+source_dir/
+venv/
+*.pyc
+*test.*

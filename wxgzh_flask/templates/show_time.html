@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nsf</title>
+</head>
+<body>
+已有名称:<br>
+{{ name_l }}
+    <form action="spider" method="get">
+         名称:<br>
+        <input type="text" name="name"><br>
+         公众号名称<br>
+        <input type="text" name="gzh_name"><br>
+         开始页数<br>
+        <input type="text" name="start_page"><br>
+         结束页数<br>
+        <input type="text" name="end_page"><br>
+        <input type="submit" value="提交"><br>
+    </form>
+    <form action="download" method="get">
+         填入想下载的名称:<br>
+        <input type="text" name="name"><br>
+        <input type="submit" value="下载"><br>
+    </form>
+</body>
+</html>
