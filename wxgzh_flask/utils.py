@@ -13,13 +13,15 @@ from selenium.webdriver.common.by import By
 
 from config import main_page_url, detail_page_url, request_delay, user_agent, gzh_list_url, js_delay, source_page_path
 
+file_path = os.path.split(os.path.realpath(__file__))
+
 
 def get_selenium_driver():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
-    chrome_driver = "/home/nsf/Desktop/dependency/chromedriver"
+    chrome_driver = f'{file_path[0]}/chromedriver'
     driver_1 = webdriver.Chrome(options=options, executable_path=chrome_driver)
     driver_1.set_window_size(1853, 1053)
     return driver_1
