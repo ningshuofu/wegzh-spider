@@ -19,7 +19,7 @@ def get_selenium_driver():
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
-    chrome_driver = "./chromedriver"
+    chrome_driver = "/home/nsf/Desktop/dependency/chromedriver"
     driver_1 = webdriver.Chrome(options=options, executable_path=chrome_driver)
     driver_1.set_window_size(1853, 1053)
     return driver_1
